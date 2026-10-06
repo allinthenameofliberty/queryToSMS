@@ -6,6 +6,16 @@ Since this is older version of java that is used with following dependencies, th
 <li/>sql query should be written and saved in the file sql-file.sql<br/>
 <li/>recipient number shall be entered in the file destination-numbers.txt, line separated with country code.<br/>
 <li/>other configuraitons on config.properties. like jdbc connection parameters/ smpp connection parameters, etc..<br/>
+<li/>the configuration files are :
+  <li/>jdbc.url = jdbc:postgresql://<IP>:<PORT>/<DBName>
+jdbc.username = <User>
+jdbc.password = <Password>
+
+smsc.host = <SMSC SERVER IP>
+smsc.port = <SMSC SERVER PORT>
+smsc.username = <SMPP USER>
+smsc.password = <SMPP PASSWORD>
+smsc.sourceAddress = <SMPP SENDER NAME>
 <br/>
 If using different database, need appropriate jdbc jar file and modification in the java codes accordingly.
 <br/>
