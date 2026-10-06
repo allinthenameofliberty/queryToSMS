@@ -7,16 +7,17 @@ Since this is older version of java that is used with following dependencies, th
 <li/>recipient number shall be entered in the file destination-numbers.txt, line separated with country code.<br/>
 <li/>other configuraitons on config.properties. like jdbc connection parameters/ smpp connection parameters, etc..<br/>
 <li/>the configuration files are :
-  <li/>jdbc.url = jdbc:postgresql://<IP>:<PORT>/<DBName>
-jdbc.username = <User>
-jdbc.password = <Password>
+ <ul> <li/>jdbc.url = jdbc:postgresql://<IP>:<PORT>/<DBName>
+      <li/>jdbc.username = <User>
+<li/>jdbc.password = <Password>
 
-smsc.host = <SMSC SERVER IP>
-smsc.port = <SMSC SERVER PORT>
-smsc.username = <SMPP USER>
-smsc.password = <SMPP PASSWORD>
-smsc.sourceAddress = <SMPP SENDER NAME>
-<br/>
+<li/>smsc.host = <SMSC SERVER IP>
+<li/>smsc.port = <SMSC SERVER PORT>
+<li/>smsc.username = <SMPP USER>
+<li/>smsc.password = <SMPP PASSWORD>
+<li/>smsc.sourceAddress = <SMPP SENDER NAME>
+</SMPP>ul
+  <br/>
 If using different database, need appropriate jdbc jar file and modification in the java codes accordingly.
 <br/>
 This code uses splitting message into segments using SAR segments. If using UHD, need different approach.
